@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo.ConsoleApp", "demo.ConsoleApp\demo.ConsoleApp.csproj", "{686B7582-BA20-4FDD-873E-0F83D1F60166}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.Shapes", "ConsoleApp.Shapes\ConsoleApp.Shapes.csproj", "{F583B180-2ADE-4844-BE01-F46D8D6E8423}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{686B7582-BA20-4FDD-873E-0F83D1F60166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{686B7582-BA20-4FDD-873E-0F83D1F60166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{686B7582-BA20-4FDD-873E-0F83D1F60166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{686B7582-BA20-4FDD-873E-0F83D1F60166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F583B180-2ADE-4844-BE01-F46D8D6E8423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F583B180-2ADE-4844-BE01-F46D8D6E8423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F583B180-2ADE-4844-BE01-F46D8D6E8423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F583B180-2ADE-4844-BE01-F46D8D6E8423}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
