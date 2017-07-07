@@ -24,11 +24,13 @@ namespace demo.ConsoleApp
             }
             var bigArea = shapes.Where(s => s.Area() > 25).ToList();
             var rectangles = shapes.Where(s => s is Rectangle).ToList();
+            Circle c = Circle.GetCircle;
+            c.Radius = 555;
             foreach (var item in bigArea)
             {
                 Console.WriteLine(item.ToString());
             }
-
+            Console.WriteLine(c.Area());
             Console.ReadLine();
         }
     }

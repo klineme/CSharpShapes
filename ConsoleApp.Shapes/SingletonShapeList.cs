@@ -6,20 +6,18 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp.Shapes
 {
-    public class SingletonShapeList
+    public class SingletonShapeList<T> : List<T>
     {
-        private static List<Shape> shapeList; //NOT TECHNICALLY SINGLETON, Not SingletonShapeList type
+        private static SingletonShapeList<T> shapeList; //NOT TECHNICALLY SINGLETON, Not SingletonShapeList type
 
         private SingletonShapeList()
         {
-            shapeList = new List<Shape>();
         }
-        public List<Shape> list
-        {
-            get
+        public SingletonShapeList<T> MyProperty {
+        get
             {
                 if (shapeList == null)
-                    shapeList = new List<Shape>();
+                    shapeList = new SingletonShapeList<T>();
                 return shapeList;
             }
         }

@@ -49,5 +49,10 @@ namespace ConsoleApp.Shapes
             get { return length; }
             set { length = value; }
         }
+        public int Width //property
+        {
+            get { return width; }
+            set { width = value; }
+        }
     }
 }
