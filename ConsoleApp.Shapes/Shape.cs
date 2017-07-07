@@ -44,5 +44,10 @@ namespace ConsoleApp.Shapes
 
             return result;
         }
+        public int Length //property
+        {
+            get { return length; }
+            set { length = value; }
+        }
     }
 }

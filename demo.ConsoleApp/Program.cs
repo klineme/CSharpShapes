@@ -14,18 +14,20 @@ namespace demo.ConsoleApp
         static void Main(string[] args)
         {
             List<Shape> shapes = new List<Shape>();
-            List<Shape> bigArea = new List<Shape>();
 
-            for(int i = 0; i < 100; i++)
+            for(int i = 1; i < 101; i++)
             {
-                shapes.Add(new Triangle(i, i * 3));
+                if (i % 5 == 0)
+                    shapes.Add(new Triangle(i, i * 3));
+                else
+                    shapes.Add(new Rectangle(i, i));
             }
-            bigArea = shapes.FindAll(s => s.Area() > 25);
-            //foreach(var item in shapes)hjkhjk
-            //{
-            //    Console.WriteLine(item.GetType());
-            //    Console.WriteLine(item.Area());
-            //}
+            var bigArea = shapes.Where(s => s.Area() > 25).ToList();
+            var rectangles = shapes.Where(s => s is Rectangle).ToList();
+            foreach (var item in bigArea)
+            {
+                Console.WriteLine(item.ToString());
+            }
 
             Console.ReadLine();
         }
