@@ -21,7 +21,7 @@ namespace demo.ConsoleApp
                 shapes.Add(new Triangle(i, i * 3));
             }
             bigArea = shapes.FindAll(s => s.Area() > 25);
-            //foreach(var item in shapes)
+            //foreach(var item in shapes)hjkhjk
             //{
             //    Console.WriteLine(item.GetType());
             //    Console.WriteLine(item.Area());
